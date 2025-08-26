@@ -1,11 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SplashScreen from './View/SplashScreen';
-import LoginScreen from './View/LoginScreen';
-import RegisterScreen from './View/RegisterScreen';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const Stack = createNativeStackNavigator();
+import SplashScreen from './app/SplashScreen';
+import LoginScreen from './app/LoginScreen';
+import RegisterScreen from './app/RegisterScreen';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
